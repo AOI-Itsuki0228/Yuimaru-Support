@@ -1,0 +1,21 @@
+# 基礎・数値計算
+numpy
+pandas
+matplotlib
+
+# 深層学習（PyTorch）
+torch
+torchvision
+
+# 画像処理・物体検出
+opencv-python
+ultralytics
+
+# Webサーバー
+flask
+
+# Jupyter（試行錯誤・可視化用）
+jupyter
+
+# Gemini API（検討中なら）
+google-generativeai
