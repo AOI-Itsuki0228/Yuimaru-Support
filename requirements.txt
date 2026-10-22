@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+numpy
+soundfile
+faster-whisper
+av<17            # faster-whisper との相性の問題があるため上限を付ける
+ollama
+kokoro>=0.9.4
+misaki[ja]
+# torch は環境(CPU / CUDA)に合わせて、先に別コマンドで入れる(README参照)
