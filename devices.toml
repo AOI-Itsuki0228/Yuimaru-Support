@@ -1,0 +1,40 @@
+# StackChan ごとの性格の割り当て
+#
+# 使い方
+#  1. StackChan を起動すると、画面に「ID xxxxxxxxxxxx」と12桁のIDが数秒出ます。
+#     (サーバーのログにも「new device: xxxxxxxxxxxx」と出ます)
+#  2. そのIDを、下の [devices.○○○] の ○○○ の部分に書きます。
+#  3. persona に、personas/ フォルダのファイル名(.toml を除いたもの)を書きます。
+#  4. 保存したら、サーバーを再起動するか、次を実行して読み直します。
+#       curl.exe -X POST http://localhost:8000/personas/reload
+#
+# 登録していない台は、default_persona の性格になります。
+
+default_persona = "listener"
+
+# ↓ change_me_1〜5 は仮の名前です。実際のIDに書き換えてください。
+
+[devices.change_me_1]
+label = "1号機(リビング)"
+persona = "listener"
+
+[devices.change_me_2]
+label = "2号機"
+persona = "grandchild"
+
+[devices.change_me_3]
+label = "3号機"
+persona = "professor"
+
+[devices.change_me_4]
+label = "4号機"
+persona = "storyteller"
+
+[devices.change_me_5]
+label = "5号機"
+persona = "cheerleader"
+
+# USB接続(bridge.py)の台は、bridge.py の DEVICE_ID(既定は "usb")で割り当てる
+# [devices.usb]
+# label = "USB接続の台"
+# persona = "listener"
